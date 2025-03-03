@@ -7,9 +7,7 @@ session = boto3.Session()
 iam = session.client('iam')
 
 #List of IAM roles to delete
-roles_to_delete = ['AWSAmplifyCodeCommitExecutionRole-d32rytyz2bnr67 ',
-                    'AWSCodePipelineServiceRole-us-east-1-pipeline-secondDevopsGetti ',
-                      'AWSCodePipelineServiceRole-us-west-2-meme-draft-pipeline'] # Replace with your actual role names
+roles_to_delete = ['role-1', 'role-2', 'role-3'] # Replace with your actual role names
 
 #Define the scheduled deletion time (24-hour format: HH:MM)
 scheduled_deletion_time = "15:50"  # Replace with your desired time
